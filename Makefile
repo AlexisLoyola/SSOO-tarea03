@@ -6,10 +6,15 @@ TARGET=./main
 
 INCLUDES=-I./src/include -I.
 INCLUDES=-I./src/include -I.
+LDLIBS=-lpthread
+
+CXXFLAGS=-std=c++17 -Wall -O2
 
 DIR_OBJ=./src/objs
 
 SRCS=$(wildcard ./src/*.cc)
+
+OBJS=$(patsubst ./src/%.cc,$(DIR_OBJ)/%.o,$(SRCS))
 
 all: $(TARGET)
 	@echo Made [ $? ] OK :\)
