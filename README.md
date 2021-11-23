@@ -3,7 +3,7 @@
 ### Correo: alexis.loyola@alumnos.uv.cl
 
 #### Diseño de solución:
-Se implementó la solucion para mostrar en pantalla la secuencia Fibonacci y los numeros impares con un maximo de 50 iteraciones del ciclo utilizando un fork() para que el proceso padre muestre el Fibonacci y el proceso hijo muestre los impares, ambos con su respectiva informacion mostrada en pantalla (PPIDE, PID).
+Se implementó la solucion para mostrar en pantalla la secuencia Fibonacci y los numeros impares con un maximo de 50 iteraciones del ciclo utilizando un fork() para que el proceso padre muestre el Fibonacci y el proceso hijo muestre los impares, ambos con su respectiva informacion mostrada en pantalla (PPIDE, PID). Todo esto dentro de distintos ciclos como el while para repetir 50 veces y if para comprobar si son procesos padres o procesos hijos.
 
 Se buscó informacion en internet sobre como identificar las señales de ctrl+C, ctrl+Z y ctrl+\, para que al momento de ingresarlas muestre en pantalla un mensaje diciendo que no se permite la detencion.
 
