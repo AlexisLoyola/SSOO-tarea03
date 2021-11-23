@@ -17,7 +17,7 @@ int main(){
 
 	signal(SIGTSTP, invalid); //Detecta ctrl+Z
 	signal(SIGINT, invalid); //Detecta ctrl+C
-	signal(SIGQUIT, invalid); //Detecta ctrl+\
+	signal(SIGQUIT, invalid); //Detecta ctrl+
 
 	while (c_hijo<=50){ //Realiza el ciclo 50 veces.
 		if (child == 0){
